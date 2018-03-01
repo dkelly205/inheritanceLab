@@ -37,4 +37,16 @@ public class DeveloperTest {
         developer.raiseSalary(0.01);
         assertEquals(24240.00, developer.getSalary(), 0.01);
     }
+
+    @Test
+    public void setName(){
+        developer.setName("Dave");
+        assertEquals("Dave", developer.getName());
+    }
+
+//    @Test
+//    public void nameCannotBeNull(){
+//        developer.setName("");
+//        assertEquals("", developer.getName());
+//    }
 }
